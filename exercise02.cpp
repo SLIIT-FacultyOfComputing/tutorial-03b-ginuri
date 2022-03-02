@@ -1,4 +1,5 @@
 #include <iostream>
+#include<iomanip>
 using namespace std;
 
 int volume(int height, int width, int length);
@@ -31,3 +32,9 @@ int main() {
 }
 
 // Implement the Volume() function here
+int volume(int height, int width, int length){
+  int volume;
+  volume=height*width*length;
+  cout<<setprecision(2)<<setiosflags(ios::fixed)<<volume;
+  return volume;
+}
